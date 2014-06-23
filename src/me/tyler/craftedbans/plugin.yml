@@ -1,0 +1,9 @@
+name: Craftedbans
+version: 0.1.1-Beta
+author: buildcarter8
+main: me.Tyler.craftedbans.Craftedbans
+description: >
+              Ban People :O
+commands:
+     ban:
+       description: Ban a player/ unban a player
