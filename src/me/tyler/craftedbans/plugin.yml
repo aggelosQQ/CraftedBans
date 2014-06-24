@@ -7,3 +7,5 @@ description: >
 commands:
      ban:
        description: Ban a player/ unban a player
+     kick:
+       description: kick a player.
