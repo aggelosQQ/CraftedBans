@@ -53,12 +53,26 @@ public class Craftedbans extends JavaPlugin{
 	    	    	offlinep.setBanned(false);
 	    	    	Bukkit.broadcastMessage(ChatColor.GRAY + offlinep.getName() + " Has been unbanned by " + sender.getName());
 	    	    }
+	     }
+	        if(commandLabel.equalsIgnoreCase("kick")) {
+	    	if(sender.hasPermission("craftedbans.kick"))
+	    	if (args.length == 0)
+	    		sender.sendMessage(ChatColor.RED + "Usage: /kick <player>");
+	    	else if (args.length == 1) {
+	    		if (player.getServer().getPlayer(args[0]) != null) {
+			          Player targetPlayer = player.getServer().getPlayer(args[0]);
+			            Bukkit.broadcastMessage(ChatColor.GRAY + targetPlayer.getName() + " Has been kicked by " + sender.getName()); 
+                        targetPlayer.kickPlayer(ChatColor.GOLD + "Disconnected by " + sender.getName());
+	    		}else{
+	    			sender.sendMessage(Not_Found);
+	    		}
 	    			
 		    	     
 }
-		return true;
 	    	}
 	     {
 		
 	  }
+		return true;
+}
 }
