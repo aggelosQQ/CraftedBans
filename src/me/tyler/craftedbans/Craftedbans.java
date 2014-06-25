@@ -35,7 +35,7 @@ public class Craftedbans extends JavaPlugin{
 	     if(commandLabel.equalsIgnoreCase("ban")) {
 	    	if(sender.hasPermission("craftedbans.ban"))
 	    	if (args.length == 0)
-	    		sender.sendMessage(ChatColor.RED + "Usage: /ban <player> <any letter here unbans>");
+	    		sender.sendMessage(ChatColor.RED + "Usage: /ban <player> <unban>");
 	    	else if (args.length == 1) {
 	    		if (player.getServer().getPlayer(args[0]) != null) {
 			          Player targetPlayer = player.getServer().getPlayer(args[0]);
