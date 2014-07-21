@@ -1,11 +1,16 @@
 name: Craftedbans
-version: 0.1.1-Beta
+version: 0.1.2-Beta
 author: buildcarter8
 main: me.Tyler.craftedbans.Craftedbans
 description: >
               Ban People :O
 commands:
      ban:
-       description: Ban a player/ unban a player
+       description: Ban a player
      kick:
        description: kick a player.
+     unban:
+        description: unban a player
+     warn:
+       description: CraftedSmart command- warn a player.
+        
