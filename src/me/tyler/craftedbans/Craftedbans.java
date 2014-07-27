@@ -12,14 +12,22 @@ public class Craftedbans extends JavaPlugin{
 	  public static final String VERSION = ("1.1.2");
 	  public static final String NOPE_YOU_CANT = (ChatColor.RED + "No permissions!");
 	  public static final String Not_Found = (ChatColor.GOLD + "Player not found!");
+	  public boolean log = true;
 	  public MySQLManager mysql = new MySQLManager(this);
 	  public void onDisable()
 	  {
-		log.info("[CraftedSmart]: Has been Disabled!");
+	  	this.mysql.closeDB();
+	  	log.info("Could not connect to database"), Level.WARNING);
+	    log.info("Error:" + e, Level.WARNING);
+	  }
+	    log.info("[CraftedSmart]: Has been Disabled!");
 	    log.info("[CraftedBans]: Has Been Disabled!");
 	  }
 	  public void onEnable() 
 	  {
+	    this.mysql.setupDB();
+	  } catch (SQLException e) {
+	    this.logDB = false;
 	    log.info("[CraftedSmart]: V01 Has been enabled");
 	    log.info("[CraftedBans]: Version " + VERSION +  " Has Been Enabled");
 	  }
