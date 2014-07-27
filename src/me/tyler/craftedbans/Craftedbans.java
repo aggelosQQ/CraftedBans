@@ -28,7 +28,7 @@ public class Craftedbans extends JavaPlugin{
 	    this.mysql.setupDB();
 	  } catch (SQLException e) {
 	    this.logDB = false;
-	    log.info("[CraftedSmart]: V01 Has been enabled");
+	    log.info("[CraftedSmart]: V02 Has been enabled");
 	    log.info("[CraftedBans]: Version " + VERSION +  " Has Been Enabled");
 	  }
 
