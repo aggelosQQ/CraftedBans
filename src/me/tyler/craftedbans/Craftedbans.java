@@ -12,6 +12,7 @@ public class Craftedbans extends JavaPlugin{
 	  public static final String VERSION = ("1.1.2");
 	  public static final String NOPE_YOU_CANT = (ChatColor.RED + "No permissions!");
 	  public static final String Not_Found = (ChatColor.GOLD + "Player not found!");
+	  public MySQLManager mysql = new MySQLManager(this);
 	  public void onDisable()
 	  {
 		log.info("[CraftedSmart]: Has been Disabled!");
