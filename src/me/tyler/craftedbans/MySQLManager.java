@@ -1,9 +1,9 @@
 package me.tyler.craftedbans
 
 public class MySQLManager {
-    private final craftedbans main;
+    private final Craftedbans main;
     
-    public MySQLManager(craftedbans h) {
+    public MySQLManager(Craftedbans h) {
         this.main = h;
     }
 }
